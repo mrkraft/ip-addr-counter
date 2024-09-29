@@ -9,7 +9,7 @@ The file is unlimited in size and can occupy tens and hundreds of gigabytes.
 IPv4 uses a 32-bit address space which provides 4294967296 (2^32) unique addresses.
 
 So we need 4294967296 bits to track unique IPs. It's 4294967296 / 8 = 536,870,912 bytes,
-or 256 X 2,097,152 Matrix.
+or 256 X 2,097,152 Matrix of bytes.
 
 The program reads the file by byte chunks and send them to a CHANNEL.
 Workers read the chunks and process them, checking the state Matrix and updating the counter.
